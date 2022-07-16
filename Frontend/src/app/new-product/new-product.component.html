@@ -1,0 +1,45 @@
+<div class="card">
+    <form (ngSubmit)="NewProduct()">
+        <!-- Header -->
+        <div class="card-header">
+            {{title}}
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Si No</td>
+                            <td><input type="text" name="p_code" [(ngModel)]="productItem.productCode"></td>
+                        </tr>
+                        <tr>
+                            <td>Book</td>
+                            <td><input type="text" name="p_name" [(ngModel)]="productItem.productName"></td>
+                        </tr>
+                        <tr>
+                            <td>Author</td>
+                            <td><input type="text" name="p_availability" [(ngModel)]="productItem.availability"></td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td><input type="text" name="p_price" [(ngModel)]="productItem.price"></td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td><input type="text" name="p_rating" [(ngModel)]="productItem.rating"></td>
+                        </tr>
+                        <tr>
+                            <td>Image URL</td>
+                            <td><input type="text" name="p_image" [(ngModel)]="productItem.imageURL"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
