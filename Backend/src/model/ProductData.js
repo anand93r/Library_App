@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/LibraryDB");
+mongoose.connect("mongodb+srv://admin:admin@libraryapp.is8pbwr.mongodb.net/LibraryDB?retryWrites=true&w=majority");
 const Schema = mongoose.Schema;
 
 var ProductSchema = new Schema({
